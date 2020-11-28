@@ -1,20 +1,28 @@
 {
-  "name": "Docler",
+  "name": "docler_coding_assessment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DevArt002/Docler-Coding-Assessment.git"
+    "start": "webpack-dev-server --hot --open",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DevArt002/Docler-Coding-Assessment/issues"
-  },
-  "homepage": "https://github.com/DevArt002/Docler-Coding-Assessment#readme"
+  "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
