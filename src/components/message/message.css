@@ -1,0 +1,31 @@
+.message {
+    display: flex;
+}
+
+.message.right-msg {
+    justify-content: flex-end;
+}
+
+.message .time {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0px 2px;
+}
+
+.message .text {
+    margin: 0px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 0px 25px #c7d4f9;
+    border-radius: 0px 7px 7px 7px;
+}
+
+.message.right-msg .text {
+    background: linear-gradient(
+        90deg,
+        rgba(166, 125, 250, 1) 0%,
+        rgba(125, 125, 250, 1) 100%
+    );
+    color: white;
+    border-radius: 7px 0px 7px 7px;
+}

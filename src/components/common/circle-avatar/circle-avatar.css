@@ -1,0 +1,46 @@
+.circle-avatar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        rgba(166, 125, 250, 1) 0%,
+        rgba(125, 125, 250, 1) 100%
+    );
+
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f2f2f2;
+}
+
+.circle-avatar.small-avt {
+    transform: scale(0.8);
+}
+
+.circle-avatar > p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.circle-avatar > span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #97de50;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f2f2f2;
+}
+
+@media (max-width: 480px) {
+    .circle-avatar > p {
+        font-size: 1rem;
+    }
+}
