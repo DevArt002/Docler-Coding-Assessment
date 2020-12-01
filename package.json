@@ -1,28 +1,14 @@
 {
   "name": "docler_coding_assessment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot --open",
-    "build": "webpack --config webpack.config.js --mode production"
+    "install-all": "cd client && yarn && cd .. && cd server && yarn",
+    "dev-server": "cd server && yarn dev",
+    "dev-client": "cd client && yarn dev",
+    "dev": "concurrently \"yarn dev-client\" \"yarn dev-server\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/preset-env": "^7.12.7",
-    "@babel/preset-react": "^7.12.7",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   }
 }

@@ -1,0 +1,42 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 10,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "defaultParams": true
+        }
+    },
+    "rules": {
+        "no-param-reassign": ["error", { "props": false }],
+        "arrow-parens": ["error", "always"],
+        "no-plusplus": "off",
+        "no-console": "off",
+        "no-restricted-globals": "off",
+        "no-nested-ternary": "off",
+        "radix": "off",
+        "global-require": "off",
+        "quotes": [
+            2,
+            "single",
+            { "avoidEscape": true, "allowTemplateLiterals": true }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "es5",
+                "singleQuote": true,
+                "printWidth": 100,
+                "arrowParens": "always",
+                "semi": false
+            }
+        ]
+    },
+    "plugins": ["prettier"],
+    "extends": ["airbnb-base", "prettier"]
+}

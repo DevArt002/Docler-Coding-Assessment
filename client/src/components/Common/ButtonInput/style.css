@@ -1,0 +1,44 @@
+.button-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, rgb(179, 143, 250), rgb(102, 102, 248));
+  background-size: 200px 1px;
+  transition: background 1s ease-out;
+  cursor: pointer;
+}
+
+.button-input label {
+  cursor: pointer;
+}
+
+.button-input:hover {
+  background-position: -100px;
+}
+
+.button-input:active {
+  background: linear-gradient(90deg, rgb(122, 85, 255), rgba(122, 85, 255));
+}
+
+.button-input.transparent {
+  color: #997dfa;
+  background: none;
+}
+
+.button-input.transparent:hover {
+  color: #b29efc;
+}
+
+.button-input.transparent:active {
+  color: #7a55ff;
+}
+
+@media (max-width: 480px) {
+  .button-input {
+    font-size: 1rem;
+  }
+}
