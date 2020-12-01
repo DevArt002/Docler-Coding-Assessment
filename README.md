@@ -3,7 +3,7 @@
 Simple chat SPA.
 
 **Preview**
-![Banner](https://github.com/DevArt002/Docler-Coding-Assessment/blob/master/preview)
+![Banner](https://github.com/DevArt002/Docler-Coding-Assessment/blob/master/preview.gif)
 
 # How it works
 
