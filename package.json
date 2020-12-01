@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "install-all": "cd client && yarn && cd .. && cd server && yarn",
+    "install-all": "yarn && cd client && yarn && cd .. && cd server && yarn",
     "dev-server": "cd server && yarn dev",
     "dev-client": "cd client && yarn dev",
     "dev": "concurrently \"yarn dev-client\" \"yarn dev-server\""

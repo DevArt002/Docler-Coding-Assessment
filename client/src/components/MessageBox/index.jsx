@@ -16,7 +16,10 @@ const MessageBox = ({ onSendMessage: pushMessage, settings }) => {
 
   // When user clicks shortcut for sending message
   const onMsgBoxKeyDown = (e) => {
-    if (e.key === 'Enter' && e.ctrlKey && settings.short_cut.value === 1) {
+    if (
+      ((e.key === 'Enter' && e.ctrlKey) || (e.key === 'Enter' && e.metaKey)) &&
+      settings.short_cut.value === 1
+    ) {
       e.preventDefault()
       onSendMessage()
     }
